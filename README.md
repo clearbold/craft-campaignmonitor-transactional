@@ -1,0 +1,1 @@
+# craft-campaignmonitor-transactional
