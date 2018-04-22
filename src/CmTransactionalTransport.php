@@ -9,11 +9,9 @@ namespace clearbold\cmtransactional;
 
 require_once CRAFT_VENDOR_PATH.'/campaignmonitor/createsend-php/csrest_transactional_classicemail.php';
 
-/**
- * Campaign Monitor requires separate HTML and Text messages, where the Swift Mailer template creates 1 multipart message.
- * That needs to be parsed out.
- * https://github.com/zbateson/MailMimeParser
-**/
+// Campaign Monitor requires separate HTML and Text messages, where the Swift Mailer template creates 1 multipart message.
+// That needs to be parsed out.
+// https://github.com/zbateson/MailMimeParser
 use ZBateson\MailMimeParser\MailMimeParser;
 
 /**
