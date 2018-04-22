@@ -8,4 +8,4 @@ composer require clearbold/craft-campaignmonitor-transactional
 
 To use:
 
-Enable **Campaign Monitor Transactional** as your *Transport Type* under *Settings > Email Settings* in your Craft control panel.
+Enable **Campaign Monitor Transactional** as your *Transport Type* under *Settings > Email Settings* in your Craft control panel. Then enter in the API key from your Campaign Monitor account.
