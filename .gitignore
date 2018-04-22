@@ -3,3 +3,6 @@
 !/craft/storage/logo/*
 
 vendor/
+
+.DS_Store
+composer.lock
