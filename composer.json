@@ -5,12 +5,19 @@
     "type": "craft-plugin",
     "homepage": "https://github.com/clearbold/craft-campaignmonitor-transactional",
     "license": "MIT",
+    "authors": [
+        {
+            "name": "Mark Reeves",
+            "homepage": "http://clearbold.com"
+        }
+    ],
     "keywords": [
         "craft",
         "cms",
         "craftcms",
         "email",
-        "campaignmonitor"
+        "campaignmonitor",
+        "campaign monitor"
     ],
     "require": {
         "craftcms/cms": "^3.0.1",
