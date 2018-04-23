@@ -18,7 +18,7 @@ use ZBateson\MailMimeParser\MailMimeParser;
  *
  *
  * @author Mark Reeves, Clearbold, LLC <hello@clearbold.com>
- * @since 3.0
+ * @since 1.0
  */
 
 class CmTransactionalTransport extends Transport

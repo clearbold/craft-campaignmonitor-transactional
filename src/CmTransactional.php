@@ -17,7 +17,7 @@ use yii\base\Event;
  * CmTransactionalAdapter implements a Campaign Monitor Transactional Email transport adapter into Craft’s mailer.
  *
  * @author Mark Reeves, Clearbold, LLC <hello@clearbold.com>
- * @since 3.0
+ * @since 1.0
  */
 class CmTransactional extends Plugin
 {

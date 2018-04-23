@@ -14,7 +14,7 @@ use Swift_Mime_SimpleMessage;
  *
  * @author    Clearbold
  * @package   Campaign Monitor Transactional
- * @since     3.0
+ * @since     1.0
  */
 
 abstract class Transport implements \Swift_Transport

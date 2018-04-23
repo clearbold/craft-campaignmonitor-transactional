@@ -18,7 +18,7 @@ use Swift_Events_SimpleEventDispatcher;
  *
  * @property mixed $settingsHtml
  * @author Mark Reeves, Clearbold, LLC <hello@clearbold.com>
- * @since 3.0
+ * @since 1.0
  */
 class CmTransactionalAdapter extends BaseTransportAdapter
 {
