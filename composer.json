@@ -1,7 +1,7 @@
 {
     "name": "clearbold/craft-campaignmonitor-transactional",
     "description": "Campaign Monitor Transactional email adapter for Craft CMS.",
-    "version": "1.0.0",
+    "version": "1.0.2",
     "type": "craft-plugin",
     "homepage": "https://github.com/clearbold/craft-campaignmonitor-transactional",
     "license": "MIT",
@@ -40,5 +40,7 @@
         "developer": "Clearbold",
         "developerUrl": "http://clearbold.com/",
         "class": "clearbold\\cmtransactional\\CmTransactional"
-    }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
