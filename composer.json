@@ -39,6 +39,7 @@
         "handle": "cm-transactional",
         "developer": "Clearbold",
         "developerUrl": "http://clearbold.com/",
+        "changelogUrl": "https://raw.githubusercontent.com/clearbold/craft-campaignmonitor-transactional/master/CHANGELOG.md",
         "class": "clearbold\\cmtransactional\\CmTransactional"
     },
     "minimum-stability": "dev",
