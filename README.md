@@ -1,3 +1,5 @@
+# Campaign Monitor Transactional
+
 Campaign Monitor Transactional email adapter for Craft CMS enables you to send emails from the control panel via your Campaign Monitor account.
 
 To install:

@@ -90,9 +90,6 @@ class CmTransactionalAdapter extends BaseTransportAdapter
         $auth = array('api_key' => $this->apiKey);
         $client = new \CS_REST_General($auth);
 
-        // It doesn't seem that Client ID is used at all for transactional email.
-        // API Key can be agency-level, but every client has one, so that's not a problem.
-
         return new CmTransactionalTransport($auth);
     }
 }
