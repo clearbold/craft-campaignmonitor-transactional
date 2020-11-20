@@ -1,3 +1,7 @@
+## 1.0.5 - 2020-11-20
+
+* Updated campaignmonitor/createsend-php requirement to 6.1.1
+
 ## 1.0.4 - 2020-04-30
 
 * Updating zbateson/mail-mime-parser version dependency.
