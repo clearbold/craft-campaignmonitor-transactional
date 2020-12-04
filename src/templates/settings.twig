@@ -1,12 +1,15 @@
 {% import "_includes/forms" as forms %}
 
-{{ forms.textField({
+{{ forms.autosuggestField({
     label: "API Key (or Client API Key)"|t('cm-transactional'),
     instructions: "You can find this in your Campaign Monitor settings."|t('cm-transactional'),
     id: 'apiKey',
     name: 'apiKey',
     value: adapter.apiKey,
-    errors: adapter.getErrors('apiKey')
+    errors: adapter.getErrors('apiKey'),
+    suggestEnvVars: true,
+    suggestions: craft.cp.getEnvSuggestions(),
+    required: true
 }) }}
 
 {#

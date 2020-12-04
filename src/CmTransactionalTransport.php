@@ -54,7 +54,7 @@ class CmTransactionalTransport extends Transport
         $groupName = 'Craft CMS';
 
         try {
-            $result = $classicEmail->send($data, $groupName);
+            $result = $classicEmail->send($data, $groupName, 'Unchanged');
             // echo "\nSent! Here's the response:\n";
             // var_dump($result->response); exit;
         }

@@ -87,7 +87,7 @@ class CmTransactionalAdapter extends BaseTransportAdapter
     public function defineTransport()
     {
 
-        $auth = array('api_key' => $this->apiKey);
+        $auth = array('api_key' => Craft::parseEnv($this->apiKey));
         $client = new \CS_REST_General($auth);
 
         return new CmTransactionalTransport($auth);
