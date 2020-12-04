@@ -1,3 +1,7 @@
+## 1.0.6 - 2020-12-04
+
+* Merged pull request to support CM consent to track parameter, settings in ENV.
+
 ## 1.0.5 - 2020-11-20
 
 * Updated campaignmonitor/createsend-php requirement to 6.1.1
