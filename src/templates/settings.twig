@@ -12,6 +12,18 @@
     required: true
 }) }}
 
+{{ forms.autosuggestField({
+    label: "Group Name"|t('cm-transactional'),
+    instructions: "The name under which emails are grouped in Campaign Monitor (fallbacks to 'Craft CMS')"|t('cm-transactional'),
+    id: 'groupName',
+    name: 'groupName',
+    value: adapter.groupName,
+    errors: adapter.getErrors('groupName'),
+    suggestEnvVars: true,
+    suggestions: craft.cp.getEnvSuggestions(),
+    required: false
+}) }}
+
 {#
 {{ forms.textField({
     label: "Client ID"|t('cm-transactional'),
