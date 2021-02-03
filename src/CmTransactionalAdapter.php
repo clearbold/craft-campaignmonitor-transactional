@@ -47,6 +47,11 @@ class CmTransactionalAdapter extends BaseTransportAdapter
      */
     public $clientId;
 
+    /**
+     * @var string The groupName that should be used
+     */
+    public $groupName;
+
     // Public Methods
     // =========================================================================
 
@@ -88,8 +93,9 @@ class CmTransactionalAdapter extends BaseTransportAdapter
     {
 
         $auth = array('api_key' => Craft::parseEnv($this->apiKey));
+        $groupName = Craft::parseEnv($this->groupName);
         $client = new \CS_REST_General($auth);
 
-        return new CmTransactionalTransport($auth);
+        return new CmTransactionalTransport($auth, $groupName);
     }
 }
