@@ -44,7 +44,7 @@ class CmTransactionalTransport extends Transport
      *
      * @param Array $auth
      */
-    public function __construct(Array $auth, String $groupName)
+    public function __construct(Array $auth, $groupName = null)
     {
         $this->_auth = $auth;
         $this->_groupName = $groupName;
@@ -57,7 +57,7 @@ class CmTransactionalTransport extends Transport
     {
         $data = $this->_formatMessage($message);
         $classicEmail = new \CS_REST_Transactional_ClassicEmail($this->_auth, NULL);
-        $groupName = empty($this->_groupName) ?  'Craft CMS' : $this->_groupName;
+        $groupName = (isset($this->_groupName) && !empty($this->_groupName)) ? $this->_groupName : 'Craft CMS';
 
         try {
             $result = $classicEmail->send($data, $groupName, 'Unchanged');
